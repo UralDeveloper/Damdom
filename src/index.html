@@ -1,0 +1,485 @@
+@@include('modules/header.html')
+
+<div class="firstScreen" style="background-image: url('@img/back.jpg');">
+    <div class="container firstScreen-container">
+        <div class="firstScreen-wrapper">
+            <div class="firstScreen-info">
+                <div class="firstScreen-info-title">
+                    <h1>Строительство стильных и практичных каркасных домов в Перми и Пермском крае</h1>
+                </div>
+                <div class="firstScreen-info-mortgage">
+                    <div class="firstScreen-info-mortgage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="border-radius: 0%;">
+                            <rect x="0" y="0" width="512" height="512" style="fill: none" rx="0" ry="0"></rect>
+                            <g transform="scale(0.8) translate(63.999999999999986, 63.999999999999986)"
+                                transform-origin="0 0">
+                                <g>
+                                    <path d="M87.7,68.5v375h336.7v-375H87.7z M386.9,406.1H125.1V105.9h261.8V406.1z">
+                                    </path>
+                                    <rect x="162.5" y="143.3" width="187" height="37.4"></rect>
+                                    <rect x="162.5" y="236.8" width="37.4" height="37.4"></rect>
+                                    <rect x="237.3" y="236.8" width="37.4" height="37.4"></rect>
+                                    <rect x="312.1" y="236.8" width="37.4" height="37.4"></rect>
+                                    <rect x="162.5" y="330.3" width="37.4" height="37.4"></rect>
+                                    <rect x="237.3" y="330.3" width="37.4" height="37.4"></rect>
+                                    <rect x="312.1" y="330.3" width="37.4" height="37.4"></rect>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="firstScreen-info-mortgage-text">Ипотека от 19 990₽ в месяц!</div>
+                </div>
+                <div class="firstScreen-info-subtitle">
+                    <p>Строим стильные, современные, комфортные и доступные каркасные дома с гарантией!</p>
+                    <span><i class="fa-sharp fa-light fa-arrow-right"></i> дом от <span class="priceRub">2500000</span></span>
+                </div>
+                <div class="firstScreen-info-btns">
+                    <button class="firstScreen-info-link" data-bs-toggle="modal" data-bs-target="#modalQuiz">
+                        <span class="flash"></span>
+                        Рассчитать цену <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bulletsLabel">
+    <div class="container">
+        <div class="bulletsLabel-wrapper">
+            <div class="bulletsLabel-item">
+                <div class="bulletsLabel-item-head">
+                    <div class="bulletsLabel-item-icon">
+                        <img src="@img/hotspot_pulse_gif.gif" alt="">
+                    </div>
+                    <div class="bulletsLabel-item-title">
+                        Надежный и стильный
+                    </div>
+                </div>
+                <div class="bulletsLabel-item-text">
+                    <p>Строим лучше, чем по СНиП, надежно и долговечно, комплектуем материалами по оптовой цене</p>
+                </div>
+            </div>
+            <div class="bulletsLabel-item">
+                <div class="bulletsLabel-item-head">
+                    <div class="bulletsLabel-item-icon">
+                        <img src="@img/hotspot_pulse_gif.gif" alt="">
+                    </div>
+                    <div class="bulletsLabel-item-title">
+                        Дом по доступной цене
+                    </div>
+                </div>
+                <div class="bulletsLabel-item-text">
+                    <p>Доступная стоимость каркасного дома в сочетании со всеми действующими ипотечными программами</p>
+                </div>
+            </div>
+            <div class="bulletsLabel-item">
+                <div class="bulletsLabel-item-head">
+                    <div class="bulletsLabel-item-icon">
+                        <img src="@img/hotspot_pulse_gif.gif" alt="">
+                    </div>
+                    <div class="bulletsLabel-item-title">
+                        С гарантией от застройщика
+                    </div>
+                </div>
+                <div class="bulletsLabel-item-text">
+                    <p>Знаем про каркасники абсолютно все, даем расширенную гарантию на работы до 5 лет, а на материалы до 25 лет</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="catalogObjects">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Реализованные <span>объекты</span></h2>
+            <p>дня начала, посмотрите на нашу работу</p>
+        </div>
+        <div class="catalogObjects-wrapper">
+            @@loop('modules/items/catalog.html', [
+                {'id': 1},{'id': 2},{'id': 3},
+            ])
+        </div>
+    </div>
+</div>
+
+
+<div class="callToAction" style="background-image: url('@img/back.jpg');">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Начните с малого</h2>
+            <p>Рассчитайте стоимость вашего строительства прямо сейчас</p>
+        </div>
+        <div class="callToAction-wrapper">
+            <div class="callToAction-image">
+                <img src="@img/dom.png" alt="">
+            </div>
+            <div class="callToAction-text">
+                <div class="callToAction-text-title">
+                    Ответьте на несколько вопросов и мы рассчитаем для Вас стоимость Вашего будущего каркасного дома всего за 30 минут!
+                </div>
+                <div class="callToAction-text-arrow">
+                    <img src="@img/quizarr.png" alt="">
+                </div>
+                <div class="callToAction-text-btn">
+                    <a href="#catalog" class="callToAction-text-link">
+                        <span class="flash"></span>
+                        Рассчитать цену <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="catalogProjects">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Выберите <span>свой проект</span> дома</h2>
+            <p>выберите свой стильный, надежный и доступный дом по каркасной технологии от надежного застройщика</p>
+        </div>
+        <div class="catalogProjects-wrapper">
+            @@loop('modules/items/projects.html', [
+                {},{},{},{},{},{},
+            ])
+        </div>
+    </div>
+</div>
+
+<div class="needProjects">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Нужен <span>индивидуальный проект</span> нет проблем!</h2>
+            <p>Не подходят готовые проекты? Разработаем для вас индивидуальный проект на заказ!</p>
+        </div>
+        <div class="needProjects-wrapper">
+            <div class="needProjects-image">
+                <img src="@img/project.jpg" alt="">
+            </div>
+            <div class="needProjects-info">
+                <div class="needProjects-info-list">
+                    <ul>
+                        <li>Профессиональное проектирование;</li>
+                        <li>Индивидуально под ваши потребности;</li>
+                        <li>Проектирование под ваш бюджет;</li>
+                        <li>Выполнение в самые короткие сроки!</li>
+                    </ul>
+                </div>
+                <div class="needProjects-info-price">
+                    <div>Стоимость проекта: <span class="priceRub">0</span></div>
+                    <p>*при заказе строительства в нашей компании</p>
+                </div>
+                <div class="needProjects-info-footer">
+                    Заполните тест, и мы подготовим для вас предложение по индивидуальному проектированию вашего дома
+                    <button class="needProjects-info-footer-link">
+                        <span class="flash"></span>
+                        Рассчитать дом <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="turnkeyHouse" style="background-image: url('@img/back.jpg');">
+    <div class="container turnkeyHouse-container">
+        <div class="titleBlock">
+            <h2><span>Каркасный дом</span> под ключ и доступно? <span>Реально!</span></h2>
+            <p>Подберем для вас вариант по доступной цене или комфортному ежемесячному платежу!</p>
+        </div>
+        <div class="turnkeyHouse-wrapper">
+            <div class="turnkeyHouse-image">
+                <img src="@img/mini_barn.png" alt="">
+                <img class="arrow_absolute" src="@img/arr.png" alt="">
+            </div>
+            <div class="turnkeyHouse-info">
+                <p>Отличное предложение от надежного застройщика! Мы всегда идем навстречу нашим клиентам, обеспечивая наилучшие условия.</p>
+                <div class="turnkeyHouse-info-list">
+                    <ul>
+                        <li>Все виды ипотеки;</li>
+                        <li>Выкуп недвижимости;</li>
+                        <li>Аккредитация;</li>
+                        <li>Льготная ипотека;</li>
+                        <li>Застройщик с репутацией;</li>
+                        <li>Надежные условия;</li>
+                        <li>ВСЕ юридические проверки;</li>
+                        <li>Гарантия чистоты сделки;</li>
+                    </ul>
+                </div>
+                <div class="needProjects-info-footer">
+                    <a href="#catalog" class="turnkeyHouse-info-footer-link">
+                        <span class="flash"></span>
+                        <i class="fas fa-child"></i>
+                        Хочу дом
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="materials">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Технология и материалы</h2>
+            <p>Что представляет собой современный каркасный дом?</p>
+        </div>
+        <div class="materials-wrapper">
+            <div class="materials-row">
+                <div class="materials-image">
+                    <img src="@img/dom.png" alt="">
+                </div>
+                <div class="materials-info">
+                    <div class="materials-info-title">
+                        Ключевые элементы современного дома
+                    </div>
+                    <div class="materials-info-list">
+                        <div class="materials-info-item">
+                            <div class="materials-info-item-title">
+                                Материалы
+                            </div>
+                            <div class="materials-info-item-text">
+                                Подбор современных, практичных, доступных и долговечных строительных материалов
+                            </div>
+                        </div>
+                        <div class="materials-info-item">
+                            <div class="materials-info-item-title">
+                                Работы
+                            </div>
+                            <div class="materials-info-item-text">
+                                Строительные работы, выполненные строго по проекту с соблюдением технологии 
+                            </div>
+                        </div>
+                        <div class="materials-info-item">
+                            <div class="materials-info-item-title">
+                                Дизайн и стиль
+                            </div>
+                            <div class="materials-info-item-text">
+                                Стильная и современная комбинированная внешняя отделка с учетом последних тенденций
+                            </div>
+                        </div>
+                        <div class="materials-info-item">
+                            <div class="materials-info-item-title">
+                                Компания
+                            </div>
+                            <div class="materials-info-item-text">
+                                Политика полной открытости и прозрачные взаимоотношения с клиентами
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="materials-row">
+                <div class="materials-info">
+                    <div class="materials-info-title">
+                        Ключевые элементы современного дома
+                    </div>
+                    <div class="materials-info-ol">
+                        <ol>
+                            <li>Внешняя облицовка - профнастил + имитация бруса;</li>
+                            <li>Обрешетка и контробрешетка - обеспечивают вентиляционный зазор внешней отделки дома;</li>
+                            <li>Ветрозащитная мембрана - супердиффузионная мембрана;</li>
+                            <li>Утеплитель - каменная вата;</li>
+                            <li>Силовой каркас - силовой каркас из сухой доски;</li>
+                            <li>OSB-9 - предчистовая внутренняя отделка;</li>
+                            <li>Пароизоляция - пароизоляционная мембрана;</li>
+                            <li>Обрешетка - обрешетка для внутренней отделки;</li>
+                            <li>Внутренняя отделка - любая отделка в зависимости от предпочтений заказчика и особенностей проекта;</li>
+                            <li>Коммуникации - труба ПЭТ, ПВХ армированная, кабель ВВГнГ;</li>
+                            <li>Защитная сетка - металлическая сетка от грызунов;</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="materials-image">
+                    <img src="@img/material.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="prices">
+    <div class="container prices-container">
+        <div class="titleBlock">
+            <h2>Комплектация и цены</h2>
+            <p>Сколько стоит построить качественный каркасный дом?</p>
+        </div>
+        <div class="prices-wrapper">
+            @@loop('modules/items/prices.html', [
+                {'color':'white'},
+                {'color':'orange'},
+                {'color':'green'}
+            ])
+        </div>
+        <div class="prices-footer">
+            <span class="prices-footer-text">
+                * Примечание! Указаны примерные цены на строительство дома, комплектации могут быть изменены по желанию заказчика, точный расчет только в офисе.
+            </span>
+            <button class="prices-footer-button">
+                <span class="flash"></span>
+                <i class="fas fa-calculator"></i> Рассчитать цену
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="about">
+    <div class="container about-container">
+        <div class="titleBlock">
+            <h2>Строить в <span>дружной компании!</span></h2>
+            <p>Добро пожаловать в строительную компанию "ДамДом"</p>
+        </div>
+        <div class="about-wrapper">
+            <div class="about-text">
+                <p>Создавая строительную компанию «ВАША КОМПАНИЯ», мы ориентировались, в первую очередь, на создание качественного и современного продукта на рынке загородной недвижимости в ВАШЕМ ГОРОДЕ И РЕГИОНЕ деятельности.</p>
+                <p>Сегодня мы строим каркасные дома, которые сочетают в себе интересные архитектурные решения, практичность и удобство для комфортной жизни. Размеры, планировки и конструктивные особенности наших домов разрабатываются в полном соответствии с потребностями организации быта современной семьи.</p>
+                <p>Процесс взаимодействия с нашей компанией организован максимально комфортно, от первой встречи, до сдачи готового дома заказчику, а двойной контроль качества позволяет строить действительно надежные дома и давать на них расширенную гарантию!</p>
+                <p>Приходите к нам и убедитесь в этом сами! Выбирайте строительство стильного и долговечного каркасного дома с компанией «ВАША КОМПАНИЯ»!</p>
+            </div>
+            <div class="about-image">
+                <img src="@img/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contract">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Все зафиксировано в договоре</h2>
+            <p>Все обязательства и гарантии уже прописаны в договоре на строительство дома</p>
+        </div>
+        <div class="contract-wrapper">
+            <div class="contract-list">
+                @@loop('modules/items/contract.html', [
+                    {},{},{},
+                ])
+            </div>
+            <div class="contract-image">
+                <img src="@img/d.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="letsBuild">
+    <div class="container letsBuild-container">
+        <div class="titleBlock">
+            <h2>Давайте построим хороший дом вместе!</h2>
+        </div>
+        <div class="letsBuild-wrapper">
+            <div class="letsBuild-item">
+                <div class="letsBuild-info-list">
+                    <div class="letsBuild-info-item">
+                        <div class="letsBuild-info-item-title">
+                            Сухая доска
+                        </div>
+                        <div class="letsBuild-info-item-text">
+                            Используем в строительстве только сухую конструкционную доску
+                        </div>
+                    </div>
+                    <div class="letsBuild-info-item">
+                        <div class="letsBuild-info-item-title">
+                            Каменная вата
+                        </div>
+                        <div class="letsBuild-info-item-text">
+                            Идеальный микроклимат и полное отсутствие грызунов
+                        </div>
+                    </div>
+                    <div class="letsBuild-info-item">
+                        <div class="letsBuild-info-item-title">
+                            Стройка по проекту
+                        </div>
+                        <div class="letsBuild-info-item-text">
+                            Строим только по проекту в соответствии с нормами ГОСТ
+                        </div>
+                    </div>
+                    <div class="letsBuild-info-item">
+                        <div class="letsBuild-info-item-title">
+                            Приятная цена
+                        </div>
+                        <div class="letsBuild-info-item-text">
+                            Прозрачные условия, честная смета и доступная стоимость
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="letsBuild-info-footer">
+                <button class="letsBuild-info-footer-link">
+                    <span class="flash"></span>
+                    Рассчитать дом <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="advantages">
+    <div class="container advantages-container">
+        <div class="titleBlock">
+            <h2>Еще <span>семь преимуществ</span> нашей компании!</h2>
+        </div>
+        <div class="advantages-wrapper">
+            @@loop('modules/items/advantages.html', [
+                {},{},{},{},{},{},{}
+            ])
+        </div>
+    </div>
+</div>
+
+<div class="formBlock">
+    <div class="container formBlock-container">
+        <div class="titleBlock">
+            <h2>Экспресс-расчет стоимости дома!</h2>
+            <p>Рассчитайте стоимость вашего строительства прямо сейчас</p>
+        </div>
+        <div class="formBlock-wrapper">
+            @@include('modules/form.html')
+        </div>
+        <div class="formBlock-footer">
+            <button class="formBlock-footer-link">Оставить заявку <i class="fas fa-angle-double-right"></i></button>
+            <span>Нажимая кнопку, вы даете согласие на <a href="#">обработку персональных данных</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="mortgage">
+    <div class="container mortgage-container">
+        <div class="titleBlock">
+            <h2>Продаете свой объект или <span>берете ипотеку?</span></h2>
+            <p>Мы можем вам в реализации недвижимости и получнеие ипотеки</p>
+        </div>
+        <div class="mortgage-wrapper">
+            <div class="mortgage-title"><span>доступные</span> ипотечные программы от банков-партнеров</div>
+            <div class="mortgage-logos">
+                <div class="mortgage-logos-item"><img src="@img/sber.jpg" alt=""></div>
+                <div class="mortgage-logos-item"><img src="@img/vtb.jpg" alt=""></div>
+                <div class="mortgage-logos-item"><img src="@img/domrf.jpg" alt=""></div>
+                <div class="mortgage-logos-item"><img src="@img/rossel.jpg" alt=""></div>
+            </div>
+            <div class="mortgage-footer">
+                <div class="mortgage-footer-list">
+                    <ul>
+                        <li>Подберем самые выгодные условия;</li>
+                        <li>Поможем с одобрением ипотеки;</li>
+                        <li>Оформим вторичное жилье в зачет;</li>
+                    </ul>
+                </div>
+                <div class="mortgage-footer-btn">
+                    <span>Заполните тест, и мы подготовим для вас предложение по кредитованию для строительства вашего дома</span>
+                    <button class="mortgage-footer-link">
+                        <span class="flash"></span>
+                        Рассчитать дом <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gallery">
+    @@loop('modules/items/gallery.html', [
+        {},{},{},{},{},{},{},{}
+    ])
+</div>
+@@include('modules/footer.html')

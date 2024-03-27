@@ -1,0 +1,224 @@
+<div class="footer">
+    <div class="container footer-container">
+        <div class="titleBlock">
+            <h2>Контактная информация</h2>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-mainInfo">
+                <div class="footer-logo">
+                    <a href="#"><img src="@img/wm.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-contacts-block">
+                    <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                    <span>г. Москва, ул. Ленина, д. 1</span>
+                </div>
+                <div class="footer-contacts-block">
+                    <span><i class="fa-duotone fa-phone"></i></span>
+                    <span><a href="#">+7 (999) 999-99-99</a></span>
+                </div>
+                <div class="footer-contacts-block">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <span><a href="#">uWk5h@example.com</a></span>
+                </div>
+                <div class="footer-contacts-block">
+                    <span><i class="fa-sharp fa-solid fa-timer"></i></span>
+                    <span>Пн-Пт с 08:00 до 20:00</span>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-social-item"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></div>
+                <div class="footer-social-item"><a href="#"><i class="fa-solid fa-paper-plane"></i></a></div>
+            </div>
+        </div>
+        <div class="footer-map">
+            <script type="text/javascript" charset="utf-8" defer async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4b6c4ce1003237a0253d660e908c6f745a328873f4436b65fd3513acf0f022b2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-col-left">
+                <span>© 2024 Строительная компания «Ваша компания»</span>
+                <span>Сайт не является публичной офертой</span>
+            </div>
+            <div class="footer-col-right">
+                <span>Разработка и продвижение сайтов: <a href="#">UralDeveloper</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal modalQuiz fade" id="modalQuiz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="modal-title" id="modalQuizLabel">Рассчитаем стоимость вашего дома за 30 минут!</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col-left">
+                    <div id="sizeHome_input" class="input-group">
+                        <div class="form-floating">
+                            <input type="number" class="form-control" value="140" id="sizeHome" placeholder="Размер дома">
+                            <label for="sizeHome">Разрмер дома м<sup>2</sup></label>
+                        </div>
+                    </div>
+                    <div id="numberOfStoreys" class="radio-group">
+                        <span class="group-form-title">Этажность дома</span>
+                        <div class="form-check">
+                            <input value="Один этаж" class="form-check-input" type="radio" name="numberOfStoreys" id="oneFloor" checked>
+                            <label class="form-check-label" for="oneFloor">
+                                Один этаж
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="1,5 этажа (мансарда)" class="form-check-input" type="radio" name="numberOfStoreys" id="numberOfStoreys_attic">
+                            <label class="form-check-label" for="numberOfStoreys_attic">
+                                1,5 этажа (мансарда)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="2 этажа" class="form-check-input" type="radio" name="numberOfStoreys" id="numberOfStoreys_floors_2">
+                            <label class="form-check-label" for="numberOfStoreys_floors_2">
+                                2 этажа
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Не определились" class="form-check-input" type="radio" name="numberOfStoreys" id="numberOfStoreys_notDecided">
+                            <label class="form-check-label" for="numberOfStoreys_notDecided">
+                                Не определились
+                            </label>
+                        </div>
+                    </div>
+                    <div id="houseEquipment" class="radio-group">
+                        <span class="group-form-title">Комплектация дома</span>
+                        <div class="form-check">
+                            <input value="Под крышу" class="form-check-input" type="radio" name="houseEquipment" id="houseEquipment_underTheRoof">
+                            <label class="form-check-label" for="houseEquipment_underTheRoof">
+                                Под крышу
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Теплый контур" class="form-check-input" type="radio" name="houseEquipment" id="houseEquipment_warmContour">
+                            <label class="form-check-label" for="houseEquipment_warmContour">
+                                Теплый контур
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Под ключ" class="form-check-input" type="radio" name="houseEquipment" id="houseEquipment_key" checked>
+                            <label class="form-check-label" for="houseEquipment_key">
+                                Под ключ
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Не определились" class="form-check-input" type="radio" name="houseEquipment" id="houseEquipment_notDecided">
+                            <label class="form-check-label" for="houseEquipment_notDecided">
+                                Не определились
+                            </label>
+                        </div>
+                    </div>
+                    <div id="houseSite" class="radio-group">
+                        <span class="group-form-title">Участок</span>
+                        <div class="form-check">
+                            <input value="Участок уже есть" class="form-check-input" type="radio" name="houseSite" id="houseSite_thereIsAlreadyASite">
+                            <label class="form-check-label" for="houseSite_thereIsAlreadyASite">
+                                Участок уже есть
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="В поиске участка" class="form-check-input" type="radio" name="houseSite" id="houseSite_inSearchOfASite">
+                            <label class="form-check-label" for="houseSite_inSearchOfASite">
+                                В поиске участка
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Нужна помощь с участком" class="form-check-input" type="radio" name="houseSite" id="houseSite_needHelpWithTheSite" checked>
+                            <label class="form-check-label" for="houseSite_needHelpWithTheSite">
+                                Нужна помощь с участком
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div id="whenTheStartIsPlanned" class="radio-group">
+                        <span class="group-form-title">Когда планируется старт</span>
+                        <div class="form-check">
+                            <input value="Прямо сейчас" class="form-check-input" type="radio" name="whenTheStartIsPlanned" id="whenTheStartIsPlanned_rightNow">
+                            <label class="form-check-label" for="whenTheStartIsPlanned_rightNow">
+                                Прямо сейчас
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Через месяц" class="form-check-input" type="radio" name="whenTheStartIsPlanned" id="whenTheStartIsPlanned_aMonthLater">
+                            <label class="form-check-label" for="whenTheStartIsPlanned_aMonthLater">
+                                Через месяц
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Через 3 месяца" class="form-check-input" type="radio" name="whenTheStartIsPlanned" id="whenTheStartIsPlanned_in3Months" checked>
+                            <label class="form-check-label" for="whenTheStartIsPlanned_in3Months">
+                                Через 3 месяца
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="В следующем году" class="form-check-input" type="radio" name="whenTheStartIsPlanned" id="whenTheStartIsPlanned_nextYear">
+                            <label class="form-check-label" for="whenTheStartIsPlanned_nextYear">
+                                В следующем году
+                            </label>
+                        </div>
+                    </div>
+                    <div id="formOfPayment" class="radio-group">
+                        <span class="group-form-title">Форма оплаты</span>
+                        <div class="form-check">
+                            <input value="Наличные средства" class="form-check-input" type="radio" name="formOfPayment" id="formOfPayment_cash">
+                            <label class="form-check-label" for="formOfPayment_cash">
+                                Наличные средства
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Безналичные средства (ООО, ИП)" class="form-check-input" type="radio" name="formOfPayment" id="formOfPayment_cashlessProducts">
+                            <label class="form-check-label" for="formOfPayment_cashlessProducts">
+                                Безналичные средства (ООО, ИП)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Кредитные средства" class="form-check-input" type="radio" name="formOfPayment" id="formOfPayment_creditFunds" checked>
+                            <label class="form-check-label" for="formOfPayment_creditFunds">
+                                Кредитные средства
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input value="Кредитные + наличные" class="form-check-input" type="radio" name="formOfPayment" id="formOfPayment_creditCash">
+                            <label class="form-check-label" for="formOfPayment_creditCash">
+                                Кредитные + наличные
+                            </label>
+                        </div>
+                    </div>
+                    <div id="formMain" class="form-group">
+                        <div class="">
+                            <label for="input_name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="input_name" placeholder="Иванов Иван">
+                        </div>
+                        <div class="">
+                            <label for="input_phone" class="form-label">Ваш номер телефона</label>
+                            <input type="text" class="form-control" id="input_phone" placeholder="+7 (000) 000 00-00">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scrollbar">
+    <div class="scrollbar-inner"></div>
+</div>
+</body>
+<script src="@js/bootstrap.min.js"></script>
+<script src="@js/imask.js"></script>
+<script src="@js/script.js" defer></script>
+</html>
