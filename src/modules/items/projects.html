@@ -1,5 +1,5 @@
 <div class="catalogProjects-item">
-    <div class="catalogProjects-item-image">
+    <div class="catalogProjects-item-image" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <img src="@img/image00002.jpg" alt="">
     </div>
     <div class="catalogProjects-item-info">
@@ -9,6 +9,109 @@
         <div class="catalogProjects-item-text">
             <div class="catalogProjects-item-text-title">Стоимость:</div>
             <div class="catalogProjects-item-text-value">от <span class="priceRub">1100000</span></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-projects fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-info">
+                    <p class="modal-title" id="exampleModalLabel">Дом Барн-123</p>
+                    <span class="modal-subtitle">Современный и просторный барнхаус в стильном исполнении.</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-projects-main">
+                    <div class="modal-projects-main-preview">
+                        <img src="@img/image00002.jpg" alt="">
+                    </div>
+                    <div class="modal-projects-main-info">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <img src="@img/01.png" alt="">
+                                </div>
+                                <span>Размер:</span> 14,2х10,1м.
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="@img/02.png" alt="">
+                                </div>
+                                <span>Площадь:</span> 123м<sup>2</sup>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="@img/03.png" alt="">
+                                </div>
+                                <span>Комнаты:</span> 5+
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="@img/04.png" alt="">
+                                </div>
+                                <span>Цена:</span> от 3 075 000₽
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="@img/05.png" alt="">
+                                </div>
+                                <span>Готовность:</span> от 1 месяца
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-projects-gallery">
+                    <div class="modal-section-titleBlock">
+                        <span class="title">Варианты внешнего вида и планировки</span>
+                        <span class="subtitle">Возможны любые варианты отделки и внесение любых изменений в проект</span>
+                    </div>
+                    <div class="modal-projects-gallery-list">
+                        <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="modal-projects-gallery-item">
+                            <img src="@img/image00002.jpg" alt="">
+                        </div>
+                        <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="modal-projects-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                        <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="modal-projects-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                        <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="modal-projects-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                        <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="modal-projects-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                        <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="modal-projects-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="modal-projects-footer">
+                    <div class="modal-section-titleBlock">
+                        <span class="title">Получить презентацию проекта Барн-130 с ценами</span>
+                    </div>
+                    <div class="modal-footer-wrapper">
+                        <div class="modal-footer-text">
+                            <p><b>Заинтересовались проектом?</b> Получите полную презентацию и развернутую консультацию нашего менеджера!</p>
+                            <ul>
+                                <li>Презентация проекта;</li>
+                                <li>Комплектации, варианты и цены;</li>
+                                <li>Полная спецификация проекта;</li>
+                                <li>Ответы на возникшие вопросы;</li>
+                                <li>Специальное предложение;</li>
+                            </ul>
+                            <span>Вышлем в рабочее время в течение 15 минут!</span>
+                        </div>
+                        <div class="modal-footer-form">
+                            <div class="">
+                                <label for="input_name" class="form-label">Ваше имя</label>
+                                <input type="text" class="form-control" id="input_name" placeholder="Иванов Иван">
+                            </div>
+                            <div class="">
+                                <label for="input_phone" class="form-label">Ваш номер телефона</label>
+                                <input type="text" class="form-control" id="input_phone" placeholder="+7 (000) 000 00-00">
+                            </div>
+                            <button class="btn btn-primary">Получить презентацию</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span>Нажимая кнопку, вы даете согласие на обработку персональных данных</span>
+            </div>
         </div>
     </div>
 </div>
