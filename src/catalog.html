@@ -1,0 +1,57 @@
+@@include('modules/header.html')
+<div class="firstScreen firstScreen-innerPage" style="background-image: url('@img/catalog_header.jpg');">
+    <div class="container firstScreen-container">
+        <div class="firstScreen-wrapper">
+            <div class="firstScreen-info">
+                <div class="firstScreen-info-title">
+                    <h1>Проекты каркасных домов</h1>
+                </div>
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> / <span>Проекты каркасных домов</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="catalogProjects">
+    <div class="container">
+        <div class="titleBlock">
+        </div>
+        <div class="catalogProjects-wrapper">
+            @@loop('modules/items/projects.html', [
+                {},{},{},{},{},{},
+            ])
+        </div>
+    </div>
+</div>
+
+<div class="callToAction" style="background-image: url('@img/back.jpg'); margin-bottom: 0;">
+    <div class="container">
+        <div class="titleBlock">
+            <h2>Начните с малого</h2>
+            <p>Рассчитайте стоимость вашего строительства прямо сейчас</p>
+        </div>
+        <div class="callToAction-wrapper">
+            <div class="callToAction-image">
+                <img src="@img/dom.png" alt="">
+            </div>
+            <div class="callToAction-text">
+                <div class="callToAction-text-title">
+                    Ответьте на несколько вопросов и мы рассчитаем для Вас стоимость Вашего будущего каркасного дома всего за 30 минут!
+                </div>
+                <div class="callToAction-text-arrow">
+                    <img src="@img/quizarr.png" alt="">
+                </div>
+                <div class="callToAction-text-btn">
+                    <a href="#catalog" class="callToAction-text-link">
+                        <span class="flash"></span>
+                        Рассчитать цену <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('modules/footer.html')

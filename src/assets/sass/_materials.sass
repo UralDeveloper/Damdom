@@ -1,0 +1,82 @@
+// Технология и материалы
+.materials
+    padding: 60px 0
+    position: relative
+    &-container
+        .titleBlock
+            color: #fff
+    &-wrapper
+        display: flex
+        flex-direction: column
+        gap: 80px
+    &-row
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        @media screen and ( max-width: 500px )
+            grid-template-columns: 1fr
+            gap: 20px
+    &-image
+        display: flex
+        align-items: center
+        justify-content: center
+        @media screen and ( max-width: 500px )
+            img
+                width: 100%
+    &-info
+        display: flex
+        flex-direction: column
+        gap: 32px
+        justify-content: center
+        &-title
+            text-align: left
+            font-size: 24px
+            line-height: 1.6em
+            opacity: 1
+            text-transform: uppercase
+            text-align: center
+        &-list
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 32px 20px
+            @media screen and ( max-width: 500px )
+                grid-template-columns: 1fr
+        &-ol
+            display: flex
+            align-items: center
+            justify-content: center
+            ol
+                padding-left: 0
+                margin-bottom: 0
+                max-width: 80%
+                display: flex
+                flex-direction: column
+                gap: 8px
+                li
+        &-item
+            display: flex
+            flex-direction: column
+            gap: 4px
+            position: relative
+            display: flex
+            justify-content: center
+            &-title
+                text-align: left
+                font-size: 18px
+                line-height: 1.2
+                font-weight: 500
+                opacity: 1
+                text-transform: uppercase
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                &::before
+                    content: ""
+                    display: block
+                    width: 32px
+                    height: 32px
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: contain
+                    background-image: url("../img/hotspot_pulse_gif.gif")
+                    position: relative
+                    left: -4px

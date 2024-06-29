@@ -1,0 +1,94 @@
+.catalogObjects
+    padding: 60px 0
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+        gap: 20px
+        width: 100%
+        @media screen and ( max-width: 500px )
+            grid-template-columns: 100%
+    &-item
+        display: flex
+        flex-direction: column
+        gap: 12px
+        align-items: center
+        width: 100%
+        height: 100%
+        &-info
+            display: flex
+            flex-direction: row
+            align-items: flex-start
+            width: 100%
+        &-title
+            font-size: 18px
+            line-height: 1.6
+            letter-spacing: 0em
+            font-weight: 700
+            span
+                color: $mainGreen
+        &-wrapper
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            gap: 8px
+        &-gallery
+            width: 100%
+            overflow: hidden
+            .swiper
+                &-navigation
+                &-button
+                    &-prev
+                        top: auto
+                        left: 0
+                        bottom: 0
+                        right: auto
+                    &-next
+                        top: auto
+                        left: auto
+                        bottom: 0
+                        right: 0
+                    &-prev,
+                    &-next
+                        height: 100%
+                        width: 20%
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        color: white
+                        text-shadow: 0 0 2px black
+                        font-size: 30px
+                        opacity: 0.5
+                        transition: opacity 0.2s, background-color 0.2s
+                        border-radius: 8px
+                        &:hover
+                            opacity: 1
+                            background-color: rgba(0, 0, 0, 0.2)
+                        &:after
+                            display: none
+                &-slide
+                    height: 100%
+                    width: 100%
+                    img
+                        aspect-ratio: 1/1
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        object-position: center
+                        border-radius: 8px
+            &-thumbs
+                width: 100%
+                .swiper
+                    &-slide
+                        height: 50px
+                        &:not(.swiper-slide-thumb-active)
+                            opacity: 0.5
+                        &-thumb-active
+                            opacity: 1
+                        img
+                            aspect-ratio: 1/1
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+                            object-position: center
+                            border-radius: 8px

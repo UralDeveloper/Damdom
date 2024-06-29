@@ -1,0 +1,95 @@
+.project-single
+    padding: 60px 0 0
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 40px
+        @media screen and ( max-width: 500px )
+            grid-template-columns: 1fr
+    &-photo
+        img
+            width: 100%
+            height: auto
+    &-info
+        display: flex
+        flex-direction: column
+        gap: 20px
+        &-title
+            h2
+                font-size: 52px
+                font-weight: 700
+                line-height: 1em
+                margin-bottom: 0
+        &-text
+            p
+                &:nth-last-child(1)
+                    margin-bottom: 0
+        &-price
+            font-size: 24px
+            line-height: 1em
+            .priceRub
+                font-size: 36px
+                font-weight: 700
+    &-options
+        grid-column: span 2
+        padding-left: 0
+        margin-bottom: 0
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        list-style-type: none
+        gap: 20px 20px
+        @media screen and ( max-width: 500px )
+            grid-column: span 1
+            grid-template-columns: repeat(2, 1fr)
+        .option
+            &-item
+                display: flex
+                align-items: center
+                gap: 12px
+            &-icon
+                img
+                    width: 36px
+            &-value
+                display: flex
+                flex-direction: column
+                gap: 2px
+                &-name
+                    font-size: 16px
+                    line-height: 1em
+                &-value
+                    font-size: 20px
+                    font-weight: 600
+    &-gallery
+        display: flex
+        flex-direction: column
+        gap: 20px
+        padding: 40px 0
+        grid-column: span 2
+        @media screen and ( max-width: 500px )
+            grid-column: span 1
+        &-list
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            gap: 12px
+            @media screen and ( max-width: 500px )
+                grid-template-columns: repeat(2, 1fr)
+        &-item
+            cursor: pointer
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 12px
+    &-section
+        &-titleBlock
+            display: flex
+            flex-direction: column
+            span
+                &.title
+                    font-size: 36px
+                    font-weight: 400
+                    line-height: 1.2em
+                &.subtitle
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 1.2em

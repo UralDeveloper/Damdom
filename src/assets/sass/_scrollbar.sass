@@ -1,0 +1,18 @@
+.scrollbar
+    padding: 0 4px 4px
+    width: 100%
+    position: fixed
+    bottom: 0
+    z-index: 20
+    &-inner
+        position: relative
+        bottom: 50%
+        top: 50%
+        height: 8px
+        background-color: $mainGreen
+        width: 0%
+        border-radius: 20px
+
+        animation-name: scroll
+        animation-timing-function: linear
+        animation-timeline: scroll()

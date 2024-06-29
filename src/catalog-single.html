@@ -1,0 +1,124 @@
+@@include('modules/header.html')
+<div class="firstScreen firstScreen-innerPage" style="background-image: url('@img/catalog_header.jpg');">
+    <div class="container firstScreen-container">
+        <div class="firstScreen-wrapper">
+            <div class="firstScreen-info">
+                <div class="firstScreen-info-title">
+                    <h1>Название проекта</h1>
+                </div>
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> / <a href="catalog.html">Проекты каркасных домов</a> / <span>Название проекта</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="project-single">
+    <div class="container">
+        <div class="project-single-wrapper">
+            <div class="project-single-photo">
+                <img src="@img/image00002.jpg" alt="">
+            </div>
+            <div class="project-single-info">
+                <div class="project-single-info-title">
+                    <h2>Название проекта 10x10м<sup>2</sup></h2>
+                </div>
+                <div class="project-single-info-text">
+                    <p>Этот просторный дом предназначен как для постоянного проживания, так и для сезонного использования.</p>
+                    <p>В доме предусмотрены 2 спальни, большая кухня-гостиная и просторная веранда 14 кв.м для уютных семейных вечеров.</p>
+                </div>
+            </div>
+            <div class="project-single-options">
+                <div class="option-item">
+                    <div class="option-icon">
+                        <img src="@img/01.png" alt="">
+                    </div>
+                    <div class="option-value">
+                        <span class="option-value-name">Размер:</span>
+                        <span class="option-value-value">14,2х10,1м.</span>
+                    </div>
+                </div>
+                <div class="option-item">
+                    <div class="option-icon">
+                        <img src="@img/02.png" alt="">
+                    </div>
+                    <div class="option-value">
+                        <span class="option-value-name">Площадь:</span>
+                        <span class="option-value-value">123м<sup>2</sup></span>
+                    </div>
+                </div>
+                <div class="option-item">
+                    <div class="option-icon">
+                        <img src="@img/03.png" alt="">
+                    </div>
+                    <div class="option-value">
+                        <span class="option-value-name">Комнаты:</span>
+                        <span class="option-value-value">5+</span>
+                    </div>
+                </div>
+                <div class="option-item">
+                    <div class="option-icon">
+                        <img src="@img/04.png" alt="">
+                    </div>
+                    <div class="option-value">
+                        <span class="option-value-name">Цена:</span>
+                        <span class="option-value-value">от 3 075 000₽</span>
+                    </div>
+                </div>
+                <div class="option-item">
+                    <div class="option-icon">
+                        <img src="@img/05.png" alt="">
+                    </div>
+                    <div class="option-value">
+                        <span class="option-value-name">Готовность:</span>
+                        <span class="option-value-value">от 1 месяца</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-single-gallery">
+                <div class="project-single-section-titleBlock">
+                    <span class="title">Варианты внешнего вида и планировки</span>
+                    <span class="subtitle">Возможны любые варианты отделки и внесение любых изменений в проект</span>
+                </div>
+                <div class="project-single-gallery-list">
+                    <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="modal-projects-gallery-item">
+                        <img src="@img/image00002.jpg" alt="">
+                    </div>
+                    <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="project-single-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                    <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="project-single-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                    <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="project-single-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                    <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="project-single-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                    <div data-fancybox="project-gallery" data-src="@img/image00002.jpg" class="project-single-gallery-item"><img src="@img/image00002.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="prices">
+    <div class="container prices-container">
+        <div class="titleBlock">
+            <h2>Комплектация и цены</h2>
+            <p>Сколько стоит построить качественный каркасный дом?</p>
+        </div>
+        <div class="prices-wrapper">
+            @@loop('modules/items/prices.html', [
+                {'color':'white'},
+                {'color':'orange'},
+                {'color':'green'}
+            ])
+        </div>
+        <div class="prices-footer">
+            <span class="prices-footer-text">
+                * Примечание! Указаны примерные цены на строительство дома, комплектации могут быть изменены по желанию заказчика, точный расчет только в офисе.
+            </span>
+            <button class="prices-footer-button">
+                <span class="flash"></span>
+                <i class="fas fa-calculator"></i> Рассчитать цену
+            </button>
+        </div>
+    </div>
+</div>
+
+@@include('modules/footer.html')

@@ -1,0 +1,59 @@
+// Нужен проект?
+.needProjects
+    padding: 40px 0
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 40px
+        @media screen and ( max-width: 500px )
+            grid-template-columns: 1fr
+    &-image
+        img
+            width: 100%
+    &-info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 20px
+        &-list
+            ul
+                padding-left: 0
+                list-style-type: none
+                display: flex
+                flex-direction: column
+                gap: 8px
+                margin-bottom: 0
+                li
+                    background-image: url("../img/yes1.png")
+                    background-repeat: no-repeat
+                    padding-left: 32px
+                    font-size: 18px
+        &-price
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            gap: 8px
+            div
+                font-weight: 600
+                font-size: 24px
+                line-height: 1em
+                span
+                    font-weight: 700
+                    font-size: 36px
+                    line-height: 1em
+                    color: $mainGreen
+            p
+                margin-bottom: 0
+                font-style: italic
+                opacity: 0.8
+        &-footer
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            gap: 20px
+            font-size: 20px
+            line-height: 1.6em
+            text-wrap: balance
+            &-link
+                @include btn()
