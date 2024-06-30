@@ -86,3 +86,68 @@ document.querySelectorAll("div[id^='slider_']").forEach(function(element) {
     },
   });
 }) 
+
+
+var swiper = new Swiper(".swiper.reviews-type-default", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
+var swiper = new Swiper(".swiper.reviews-type-video", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
+var swiper = new Swiper(".swiper.reviews-type-gallery", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  rewind: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
